@@ -1,57 +1,251 @@
- /*backgorund-repeat:repeat x; this will repeat image on x-axis */ 
-   /* * is for select all */
-
-   *{
-    text-align:center;
+*{
+    margin: 0;
+    padding: 0;
 }
-body{
-    background-image:url("Assets/BackgroundImage.jpg");
-    background-color:bisque;
-    background-repeat:no-repeat;
+.header{
+   background: rgb(0, 0, 0, 0.6) url(./Assets/bg.jpg);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
     background-size: cover;
-   /* background-attachment: fixed; */  
+    /* Add the blur effect */
+    /* filter: blur(8px); */
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+    height: 75vh;
 }
-img{
-    border-radius:50%;
-    width:25%;
+/* .demo-bg{
+    align-items: center;
+} */
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    
+}
+.head-t{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 25px;
+    color: white;
+
+}
+.nav0{
+    /* display: flex; */
+    list-style: none;
+    
+}
+.nav{
+    margin-left: 500px;
+    position: sticky;
+}
+.nav-menu{
+    font-family: 'Montserrat';
+    text-decoration: dashed;
+    /* color: black; */
+    font-weight: 500;
+    padding: 7px 14px;
+    margin-left: 40px;
+    color: white;
+    /* border: white 2px solid;
+    border-radius: 8px; */
+}
+.nav-menu:hover{
+    font-family: 'Montserrat';
+    text-decoration: dashed;
+    padding: 7px 14px;
+    /* color: black; */
+    font-weight: 500;
+    margin-left: 40px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.308);
+    /* border-radius: 14px; */
 }
 
-p{
-    font-family:Lucida Sans;
-    color:rgb(232, 94, 8);
-    font-size:20px;
-    text-align:center;
+.img-my{
+    border-radius: 55%;
+    width: 15%;
+    
+}
+.my-name{
+    font-family: 'Montserrat';
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+}
+.my-skills{
+    font-family: 'Montserrat';
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 6px;
+    color: white;
+}
+.social{
+    text-align: center;
+    padding-bottom: 38px;
+}
+.s-icon{
+    margin: 30px 20px;
+    
+}
+
+.s-icon:hover{
+    border: white 2px solid;
+    margin: 30px 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.c2:hover{
+    text-decoration: dashed;
+    padding: 15px;
+    color: rgb(202, 28, 28);
+}
+
+.c2{
+    display: flex;
+    justify-content: center; 
+    
+    /* box-sizing: border-box; */
+    
+    /* margin-left: 250px;
+    margin-right: 250px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* align-items: center; */
+    
+    
+}
+
+
+.c2-1{
+    max-width: 35%;
+    font-family: 'Montserrat';
+    /* border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray; */
+    border-radius: 4px;
+    padding-left: 60px;
+    padding: 30px;
+    /* color: white; */
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+    border-left: 5px solid #28282B;
+    /* background-color: #28282B; */
+    /* margin: auto; */
+}
+.c2-1-1{
+    font-weight: 750;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+}
+.c2-2:hover{
+    text-decoration: dashed;
+    padding: 15px;
+    color: rgb(202, 28, 28);
+}
+.c2-2{
+    font-family: 'Montserrat';
+    /* padding-left: 65px; */
+    /* border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray; */
+    /* color: white; */
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+    border-left: 5px solid #28282B;
+    /* background-color: #28282B; */
+   
+    border-radius: 4px;
+
+    
+    padding: 30px;
+    width: 35%;
+}
+.c2-2-1{
+    font-weight: 750;
+    font-size: 25px;
+    margin-left: 65px;
+    margin-bottom: 10px;
+    
+}
+.c2-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.ask-info{
+    font-weight: 700;
+    line-height: 40px;
+}
+.c3:hover{
+    text-decoration: dashed;
+    padding: 15px;
+    color: rgb(202, 28, 28);
+}
+.c3{
+    font-family: 'Montserrat';
+    margin-bottom: 40px;
+    
+}
+.c3-exp1{
+    border: 0 solid white;
+    /* color: white; */
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+    border-left: 5px solid #28282B;
+    /* background-color: #28282B; */
+    border-radius: 6px;
+}
+.c3-exp{
+    
+    margin: 0px 10% 0px 10%;
+    
+    /* text-align: center; */
+    
+}
+.c3-h1{
+    text-align: center;
+    font-size: 30px;
+}
+.c3-h1-f1{
+    font-weight: 600;
+    font-size: 25px;
+    padding: 35px 0 35px 40px;
 
 }
-h1{
-    color:rgb(210, 20, 239);
+.c3-h1-p{
+    max-width: 80%;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+.foot-main{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: 'montserrat';
+    color: white;
+    background-color: #0E1525;
+    /* border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; */
+    height: 80px;
+}
+.foot-list{
+    margin-left: 40%;
 }
 
-a{
-    color:rgb(204, 25, 25);
+.foot-menu{
+    display: inline-block;
 }
-body{
-    background-color:powderblue;
+.foot{
+    text-decoration: dashed;
+    padding: 15px;
+    color: white;
 }
-.div1{
-    /* border:5px solid rgb(11, 128, 211); */
-    background-color:rgb(247, 242, 176);
-    margin:200px 40px;
-    padding:20px;
+.foot:hover{
+    text-decoration: dashed;
+    padding: 15px;
+    color: gray;
 }
-
-/* .p1{
-    border:5px solid rgb(87,90,35);
-    border-style:dotted solid;
-    background-color:rgb(200, 112, 50);
-}
-#p2{
-    border:5px green;
-    border-style:solid dotted solid dotted;
-    /* IN clockwise direction,if we define only two parameteers then first will define top and bottom and second parameter define left and right */
-    /* background-color:rgb(0, 208, 255);
-}
-#p3{
-    border:5px black solid;
-    background-color:rebeccapurple;
-} */ 
